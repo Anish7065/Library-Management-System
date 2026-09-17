@@ -1,0 +1,212 @@
+USE library_db;
+
+-- ============================================================
+-- 1. INSERT 50 BOOKS
+-- ============================================================
+
+INSERT INTO books
+(title, author, total_copies, available_copies)
+VALUES
+('The Alchemist', 'Paulo Coelho', 120, 98),
+('Atomic Habits', 'James Clear', 150, 121),
+('Clean Code', 'Robert C. Martin', 85, 63),
+('Python Crash Course', 'Eric Matthes', 110, 87),
+('Database System Concepts', 'Abraham Silberschatz', 95, 71),
+('Introduction to Algorithms', 'Thomas H. Cormen', 75, 54),
+('Artificial Intelligence: A Modern Approach', 'Stuart Russell', 90, 66),
+('Machine Learning', 'Tom M. Mitchell', 80, 59),
+('Deep Learning', 'Ian Goodfellow', 70, 48),
+('Computer Networks', 'Andrew S. Tanenbaum', 100, 82),
+('Operating System Concepts', 'Abraham Silberschatz', 105, 89),
+('Computer Organization and Design', 'David A. Patterson', 65, 47),
+('Engineering Mathematics', 'B. S. Grewal', 140, 115),
+('Data Structures and Algorithms in C++', 'Mark Allen Weiss', 95, 73),
+('Let Us C', 'Yashavant Kanetkar', 130, 108),
+('C++ Primer', 'Stanley B. Lippman', 80, 61),
+('Effective Java', 'Joshua Bloch', 60, 42),
+('Design Patterns', 'Erich Gamma', 55, 39),
+('Software Engineering', 'Ian Sommerville', 100, 76),
+('Computer Architecture', 'John L. Hennessy', 70, 51),
+('The Pragmatic Programmer', 'Andrew Hunt', 90, 67),
+('Head First Java', 'Kathy Sierra', 75, 58),
+('Head First Python', 'Paul Barry', 80, 64),
+('Fluent Python', 'Luciano Ramalho', 65, 49),
+('Automate the Boring Stuff with Python', 'Al Sweigart', 100, 81),
+('Hands-On Machine Learning', 'Aurélien Géron', 85, 62),
+('Pattern Recognition and Machine Learning', 'Christopher Bishop', 60, 43),
+('Natural Language Processing with Python', 'Steven Bird', 70, 55),
+('Computer Science Illuminated', 'Nell Dale', 50, 37),
+('Discrete Mathematics', 'Kenneth Rosen', 90, 72),
+('Operating Systems: Three Easy Pieces', 'Remzi Arpaci-Dusseau', 75, 59),
+('Computer Graphics', 'Donald Hearn', 60, 45),
+('Digital Logic Design', 'M. Morris Mano', 100, 79),
+('Microprocessor Architecture', 'Ramesh Gaonkar', 65, 51),
+('Data Mining Concepts', 'Jiawei Han', 70, 52),
+('Big Data Analytics', 'Anand Rajaraman', 55, 41),
+('Cloud Computing', 'Rajkumar Buyya', 80, 63),
+('Computer Security', 'William Stallings', 70, 54),
+('Web Technologies', 'Uttam K. Roy', 75, 61),
+('Artificial Neural Networks', 'Simon Haykin', 60, 46),
+('Power System Analysis', 'Hadi Saadat', 90, 71),
+('Electrical Machines', 'P. S. Bimbhra', 85, 68),
+('Power Electronics', 'M. H. Rashid', 80, 62),
+('Control Systems Engineering', 'Nise Norman', 75, 57),
+('Signals and Systems', 'Alan V. Oppenheim', 70, 53),
+('Engineering Mechanics', 'S. Timoshenko', 100, 82),
+('Thermodynamics', 'Yunus Cengel', 90, 73),
+('Fluid Mechanics', 'R. K. Rajput', 80, 64),
+('Engineering Physics', 'S. L. Gupta', 110, 91),
+('Engineering Chemistry', 'Jain and Jain', 105, 86);
+
+
+-- ============================================================
+-- 2. INSERT 50 MEMBERS
+-- ============================================================
+
+INSERT INTO members
+(name, email, phone)
+VALUES
+('Rahul Sharma', 'rahul.sharma@gmail.com', '9876543210'),
+('Priya Reddy', 'priya.reddy@gmail.com', '9876543211'),
+('Arjun Kumar', 'arjun.kumar@gmail.com', '9876543212'),
+('Sneha Patel', 'sneha.patel@gmail.com', '9876543213'),
+('Vikram Singh', 'vikram.singh@gmail.com', '9876543214'),
+('Ananya Rao', 'ananya.rao@gmail.com', '9876543215'),
+('Rohan Mehta', 'rohan.mehta@gmail.com', '9876543216'),
+('Kavya Nair', 'kavya.nair@gmail.com', '9876543217'),
+('Aditya Verma', 'aditya.verma@gmail.com', '9876543218'),
+('Neha Gupta', 'neha.gupta@gmail.com', '9876543219'),
+('Aman Reddy', 'aman.reddy@gmail.com', '9876543220'),
+('Ishita Das', 'ishita.das@gmail.com', '9876543221'),
+('Karan Joshi', 'karan.joshi@gmail.com', '9876543222'),
+('Meera Iyer', 'meera.iyer@gmail.com', '9876543223'),
+('Siddharth Rao', 'siddharth.rao@gmail.com', '9876543224'),
+('Nikhil Kumar', 'nikhil.kumar@gmail.com', '9876543225'),
+('Pooja Sharma', 'pooja.sharma@gmail.com', '9876543226'),
+('Harsh Vardhan', 'harsh.vardhan@gmail.com', '9876543227'),
+('Divya Singh', 'divya.singh@gmail.com', '9876543228'),
+('Manish Patel', 'manish.patel@gmail.com', '9876543229'),
+('Akash Reddy', 'akash.reddy@gmail.com', '9876543230'),
+('Sakshi Rao', 'sakshi.rao@gmail.com', '9876543231'),
+('Varun Mehta', 'varun.mehta@gmail.com', '9876543232'),
+('Aishwarya Nair', 'aishwarya.nair@gmail.com', '9876543233'),
+('Ritesh Gupta', 'ritesh.gupta@gmail.com', '9876543234'),
+('Swathi Kumar', 'swathi.kumar@gmail.com', '9876543235'),
+('Abhishek Das', 'abhishek.das@gmail.com', '9876543236'),
+('Nandini Joshi', 'nandini.joshi@gmail.com', '9876543237'),
+('Vivek Sharma', 'vivek.sharma@gmail.com', '9876543238'),
+('Riya Patel', 'riya.patel@gmail.com', '9876543239'),
+('Suresh Reddy', 'suresh.reddy@gmail.com', '9876543240'),
+('Keerthi Rao', 'keerthi.rao@gmail.com', '9876543241'),
+('Rahul Verma', 'rahul.verma@gmail.com', '9876543242'),
+('Tanvi Singh', 'tanvi.singh@gmail.com', '9876543243'),
+('Mohit Kumar', 'mohit.kumar@gmail.com', '9876543244'),
+('Shreya Mehta', 'shreya.mehta@gmail.com', '9876543245'),
+('Ravi Nair', 'ravi.nair@gmail.com', '9876543246'),
+('Deepika Gupta', 'deepika.gupta@gmail.com', '9876543247'),
+('Sanjay Patel', 'sanjay.patel@gmail.com', '9876543248'),
+('Lakshmi Rao', 'lakshmi.rao@gmail.com', '9876543249'),
+('Yash Sharma', 'yash.sharma@gmail.com', '9876543250'),
+('Komal Reddy', 'komal.reddy@gmail.com', '9876543251'),
+('Tarun Singh', 'tarun.singh@gmail.com', '9876543252'),
+('Madhuri Kumar', 'madhuri.kumar@gmail.com', '9876543253'),
+('Karthik Rao', 'karthik.rao@gmail.com', '9876543254'),
+('Preeti Sharma', 'preeti.sharma@gmail.com', '9876543255'),
+('Rohit Patel', 'rohit.patel@gmail.com', '9876543256'),
+('Bhavya Nair', 'bhavya.nair@gmail.com', '9876543257'),
+('Gaurav Gupta', 'gaurav.gupta@gmail.com', '9876543258'),
+('Nisha Verma', 'nisha.verma@gmail.com', '9876543259');
+
+
+-- ============================================================
+-- 3. INSERT 30 BORROWING RECORDS
+-- ============================================================
+
+-- These records assume:
+-- Book IDs = 1 to 50
+-- Member IDs = 1 to 50
+
+
+-- Returned books
+INSERT INTO borrow_records
+(member_id, book_id, borrow_date, due_date, return_date, fine)
+VALUES
+(1, 1, '2026-08-01 10:30:00', '2026-08-15', '2026-08-14 16:20:00', 0),
+(2, 2, '2026-08-03 11:15:00', '2026-08-17', '2026-08-19 14:10:00', 10),
+(3, 3, '2026-08-05 09:45:00', '2026-08-19', '2026-08-18 12:30:00', 0),
+(4, 4, '2026-08-06 14:20:00', '2026-08-20', '2026-08-24 11:15:00', 20),
+(5, 5, '2026-08-08 10:10:00', '2026-08-22', '2026-08-21 15:40:00', 0),
+(6, 6, '2026-08-09 13:25:00', '2026-08-23', '2026-08-26 10:20:00', 15),
+(7, 7, '2026-08-10 09:30:00', '2026-08-24', '2026-08-23 17:00:00', 0),
+(8, 8, '2026-08-12 12:00:00', '2026-08-26', '2026-08-29 13:30:00', 15),
+(9, 9, '2026-08-13 15:10:00', '2026-08-27', '2026-08-27 16:00:00', 0),
+(10, 10, '2026-08-15 11:40:00', '2026-08-29', '2026-08-31 12:45:00', 10),
+(11, 11, '2026-08-16 10:20:00', '2026-08-30', '2026-08-30 14:30:00', 0),
+(12, 12, '2026-08-18 13:00:00', '2026-09-01', '2026-09-03 11:00:00', 10),
+(13, 13, '2026-08-20 09:15:00', '2026-09-03', '2026-09-02 15:30:00', 0),
+(14, 14, '2026-08-22 14:45:00', '2026-09-05', '2026-09-08 10:15:00', 15),
+(15, 15, '2026-08-25 11:30:00', '2026-09-08', '2026-09-07 16:45:00', 0);
+
+
+-- Active / currently issued books
+INSERT INTO borrow_records
+(member_id, book_id, borrow_date, due_date, return_date, fine)
+VALUES
+(16, 16, '2026-09-01 10:00:00', '2026-09-15', NULL, 0),
+(17, 17, '2026-09-02 11:20:00', '2026-09-16', NULL, 0),
+(18, 18, '2026-09-03 09:40:00', '2026-09-17', NULL, 0),
+(19, 19, '2026-09-04 13:15:00', '2026-09-18', NULL, 0),
+(20, 20, '2026-09-05 14:30:00', '2026-09-19', NULL, 0),
+(21, 21, '2026-09-06 10:45:00', '2026-09-20', NULL, 0),
+(22, 22, '2026-09-07 12:10:00', '2026-09-21', NULL, 0),
+(23, 23, '2026-09-08 15:00:00', '2026-09-22', NULL, 0),
+(24, 24, '2026-09-09 11:30:00', '2026-09-23', NULL, 0),
+(25, 25, '2026-09-10 09:20:00', '2026-09-24', NULL, 0),
+(26, 26, '2026-09-11 13:40:00', '2026-09-25', NULL, 0),
+(27, 27, '2026-09-12 10:15:00', '2026-09-26', NULL, 0),
+(28, 28, '2026-09-13 14:20:00', '2026-09-27', NULL, 0),
+(29, 29, '2026-09-14 11:50:00', '2026-09-28', NULL, 0),
+(30, 30, '2026-09-15 16:00:00', '2026-09-29', NULL, 0);
+
+
+-- ============================================================
+-- 4. CHECK YOUR DATA
+-- ============================================================
+
+SELECT COUNT(*) AS total_books
+FROM books;
+
+SELECT COUNT(*) AS total_members
+FROM members;
+
+SELECT COUNT(*) AS total_borrow_records
+FROM borrow_records;
+
+SELECT COUNT(*) AS active_loans
+FROM borrow_records
+WHERE return_date IS NULL;
+
+SELECT COUNT(*) AS overdue_books
+FROM borrow_records
+WHERE return_date IS NULL
+AND due_date < CURDATE();
+
+
+-- ============================================================
+-- 5. VIEW COMPLETE BORROWING HISTORY
+-- ============================================================
+
+SELECT
+    br.record_id,
+    m.name AS member_name,
+    b.title AS book_title,
+    br.borrow_date,
+    br.due_date,
+    br.return_date,
+    br.fine
+FROM borrow_records br
+JOIN members m
+    ON br.member_id = m.member_id
+JOIN books b
+    ON br.book_id = b.book_id
+ORDER BY br.record_id DESC;
